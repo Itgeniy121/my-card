@@ -6,10 +6,10 @@ import vk from "../../../../../public/vk.svg"
 import mail from "../../../../../public/gmail.svg"
 const Contacts = () => {
   return (
-    <div id="contacts" className="w-full h-[300px] bg-[#26273f] flex flex-col py-[40px] px-[50px]">
-        <h1 className="text-[#9f9fa0] font-[400] text-[25px]">Контакты для связи со мной</h1>
-        <div className="flex flex-row justify-between items-center w-[30%] mt-[50px]">
-        <div onClick={() => location.href = "https://t.me/nDpSmm"} className="w-[45px] h-[45px] border-[#B4B4B4] border-[2px] rounded-[45px] bg-[#272935] flex justify-center items-center hover:rotate-[360deg] duration-300 cursor-pointer">
+    <div id="contacts" className="w-full h-[300px] bg-[#26273f] flex flex-col py-[40px] px-[50px] max-sm:px-[20px]">
+        <h1 className="text-[#9f9fa0] font-[400] text-[25px] max-xsml:text-[20px]">Контакты для связи со мной</h1>
+        <div className="flex flex-row justify-between items-center w-[30%] mt-[50px] max-ipad:w-[40%] max-md:w-[60%] max-xsml:w-[90%]">
+            <div onClick={() => location.href = "https://t.me/nDpSmm"} className="w-[45px] h-[45px] border-[#B4B4B4] border-[2px] rounded-[45px] bg-[#272935] flex justify-center items-center hover:rotate-[360deg] duration-300 cursor-pointer">
                 <Image src={tg} className="w-[30px] h-[30px]" alt="socials"/>
             </div>
             <div onClick={() => location.href = "https://vk.com/ndpsm"} className="w-[45px] h-[45px] border-[#B4B4B4] border-[2px] rounded-[45px] bg-[#272935] flex justify-center items-center hover:rotate-[360deg] duration-300 cursor-pointer">

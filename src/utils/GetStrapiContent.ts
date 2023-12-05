@@ -3,7 +3,7 @@ import config from "./strapiConfig";
 const getWelcomeContent = async () => {
   const welocmeOptions = {
     headers: {
-      Authorization: `Bearer d9176c0a6ecfc0c8e95a6ac31a24e0a9122df0d8008bd8ee712be3fb0f4b419089d960b886b2088ff8eb7cc71f2cd7bf302052c908fdac0b95a075165f0f7d28e25533749e498b654b9f0f2a446b8c7277ecabd064c949ec9a4335f260b2f842ffef4b8b25eef0392773bec52b83c62e141dc598b6937346352ccd2beb8d817f`,
+      Authorization: `Bearer bb8f4107028eee9f5dcab4026bc25de201f51c34ece96c7c2beaf8e9724528d04863e18f74ac46560e02006a209c08fb70569e849b7a91063d43a1fa4365ce816fb7d361b5157eddb5d1e531159c524bdf17c250d66689114586bcb9d26530bf911fd7d2c9cf774b58266d4b2fc5b25f39c8f943739515d7bc708be886fdf922`,
     },
   };
   const request = fetch(`${config.api}/api/welcom-sections?populate=*`, welocmeOptions);
@@ -13,7 +13,7 @@ const getWelcomeContent = async () => {
 const getCardsContent = async () => {
     const welocmeOptions = {
       headers: {
-        Authorization: `Bearer d9176c0a6ecfc0c8e95a6ac31a24e0a9122df0d8008bd8ee712be3fb0f4b419089d960b886b2088ff8eb7cc71f2cd7bf302052c908fdac0b95a075165f0f7d28e25533749e498b654b9f0f2a446b8c7277ecabd064c949ec9a4335f260b2f842ffef4b8b25eef0392773bec52b83c62e141dc598b6937346352ccd2beb8d817f`,
+        Authorization: `Bearer bb8f4107028eee9f5dcab4026bc25de201f51c34ece96c7c2beaf8e9724528d04863e18f74ac46560e02006a209c08fb70569e849b7a91063d43a1fa4365ce816fb7d361b5157eddb5d1e531159c524bdf17c250d66689114586bcb9d26530bf911fd7d2c9cf774b58266d4b2fc5b25f39c8f943739515d7bc708be886fdf922`,
       },
     };
     const request = fetch(`${config.api}/api/cards?populate=*`, welocmeOptions);
